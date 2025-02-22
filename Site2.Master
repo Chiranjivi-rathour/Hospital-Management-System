@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Plan.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 109px;
+            background-color: #0099CC;
+            width: 618px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 39px;
+            text-align: center;
+            background-color: #00CC00;
+            width: 618px;
+        }
+        .auto-style4 {
+            height: 237px;
+            width: 618px;
+        }
+        .auto-style5 {
+            text-align: center;
+            background-color: #FFFF00;
+            width: 618px;
+        }
+        .auto-style6 {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .auto-style7 {
+            color: #CC00CC;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:Image ID="Image1" runat="server" CssClass="auto-style6" Height="94px" ImageUrl="~/IMG/banner1.png" Width="1350px" />
+                            <br class="auto-style7" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/BBank Login.aspx">Blood Bank</asp:HyperLink>
+&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Doctor Login.aspx">Doctor Login</asp:HyperLink>
+&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Patient Login.aspx">Patient Login</asp:HyperLink>
+&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Admin Login.aspx">ADMIN PAGE</asp:HyperLink>
+&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Contact Us.aspx">Contact Us</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="auto-style4">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                            <br />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">Website Created By Chiranjivi Rathour</td>
+                    </tr>
+                </table>
+            
+        </div>
+    </form>
+</body>
+</html>
